@@ -15,8 +15,7 @@
  
 - Users can book each rocket by clicking the reservation button or cancel the previously made booking.
 - Users can join selected mission or leave the mission the user joined earlier. 😋
-- Add and remove books 😋
-- Update your reading progress
+- 
 
 ## Getting Started 🙌
 
@@ -24,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live link 🙌
 
-[Demo link](https://bookstore-app-robertson.netlify.app/)
+[Demo link](#)
 
 To get a local copy up and running follow these simple example steps.
 
@@ -38,9 +37,9 @@ To get a local copy up and running follow these simple example steps.
 Clone the repository and change the directory to portfolio
 
 ``` 
-  `$ git clone https://github.com/bobb-Rob/bookstore-react-redux.git`
+  `$ git clone https://github.com/bobb-Rob/Space-travelers-Hub.git`
 
-  `$ cd bookstore-react-redux`
+  `$ cd Space-travelers-Hub`
 
 ```
 
@@ -66,6 +65,12 @@ Run
 | 👤 Name | Github | Twitter | LinkedIn |
 |------|--------|---------|----------|
 |Robertson Akpan|[@bobb-rob](https://github.com/bobb-rob)|[@___Robertson](https://twitter.com/___Robertson)|[@RobertsonAkpan](https://www.linkedin.com/in/robertsonakpan/)|
+
+
+| 👤 Name | Github | Twitter | LinkedIn |
+|------|--------|---------|----------|
+|Kinyera Amos|[@Kinyera](#)|[@Kinyera](#)|[@Kinyera](#)|
+
 
 
 ## 🤝 Contributing
