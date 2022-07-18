@@ -1,14 +1,19 @@
-import { configureStore } from '@reduxjs/toolkit';
-import reduxLogger from 'redux-logger';
+import { configureStore, createSlice } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
 
-const logger = reduxLogger().createLogger();
+const initialState = 0;
 
-const dummyReducer = (state = 0, action) => {
-  if (action.type === 'dummy') {
-    return state;
-  }
-  return state;
-};
+const dummySlicer = createSlice({
+  name: 'dummy',
+  initialState,
+  reducers: {
+    increment: (state) => state + 1,
+    decrement: (state) => state - 1,
+  },
+});
+
+export const { increment, decrement } = dummySlicer.actions;
+const dummyReducer = dummySlicer.reducer;
 
 const store = configureStore({
   reducer: {
