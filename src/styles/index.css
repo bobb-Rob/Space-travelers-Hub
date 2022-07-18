@@ -57,6 +57,8 @@
   letter-spacing: 1.9px;
 }
 
-.my-profile-container,.missions-list-container,.rockets-list-container {
+.my-profile-container,
+.missions-list-container,
+.rockets-list-container {
   padding: 2rem 5rem;
 }
