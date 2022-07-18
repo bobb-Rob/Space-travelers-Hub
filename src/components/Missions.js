@@ -1,7 +1,7 @@
-import React from 'react';
+import '../styles/missions.css';
 
 const Missions = () => (
-  <div>Missions</div>
+  <div className="missions-list-container">Missions</div>
 );
 
 export default Missions;

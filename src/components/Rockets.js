@@ -1,5 +1,7 @@
+import '../styles/rockets.css';
+
 const Rockets = () => (
-  <div>Rockets</div>
+  <div className="rockets-list-container">Rockets</div>
 );
 
 export default Rockets;
