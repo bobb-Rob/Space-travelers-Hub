@@ -1,3 +1,3 @@
-const NavBar = () => <header><nav>Navigation bar</nav></header>;
+const NavBar = () => <header><nav> </nav></header>;
 
 export default NavBar;
