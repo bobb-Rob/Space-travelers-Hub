@@ -1,23 +1,10 @@
-import { configureStore, createSlice } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-
-const initialState = 0;
-
-const dummySlicer = createSlice({
-  name: 'dummy',
-  initialState,
-  reducers: {
-    increment: (state) => state + 1,
-    decrement: (state) => state - 1,
-  },
-});
-
-export const { increment, decrement } = dummySlicer.actions;
-const dummyReducer = dummySlicer.reducer;
+import rocketReducers from './Rockets/rockets';
 
 const store = configureStore({
   reducer: {
-    dummyReducer,
+    rocketReducers,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
