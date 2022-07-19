@@ -4,7 +4,6 @@ import '../styles/rockets.css';
 
 const Rockets = () => {
   const state = useSelector((state) => state.rocketReducer);
-  console.log(state);
 
   return (
     <div className="rockets-list-container">

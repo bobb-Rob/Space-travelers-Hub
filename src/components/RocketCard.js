@@ -5,7 +5,7 @@ const RocketCard = ({ description, name, image }) => (
     <div>
       <img src={image} alt={name} />
     </div>
-    <div>
+    <div className="card-details">
       <h3>{name}</h3>
       <p>{description}</p>
       <button type="button">Reserve Rocket</button>
