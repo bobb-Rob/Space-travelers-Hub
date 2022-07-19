@@ -7,6 +7,10 @@ const NavBar = () => {
     textDecoration: 'underline',
   };
 
+  const handleClick = () => {
+    console.log('I can dispatch fetch from here');
+  }
+
   return (
     <>
       <header>
@@ -23,6 +27,7 @@ const NavBar = () => {
             <NavLinkEl
               path={"missions"}
               name="Missions"
+              handleClick={handleClick}
             />
             { "|" }
             <NavLinkEl
