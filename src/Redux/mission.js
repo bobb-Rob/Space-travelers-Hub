@@ -12,7 +12,7 @@ const fetchMissionApiAction = (data) => {
   const missions = data.map((mission) => ({
     id: mission.mission_id,
     name: mission.mission_name,
-    description: mission.mission_description,
+    description: mission.description,
   }));
   return ({
     type: GET_MISSION,
