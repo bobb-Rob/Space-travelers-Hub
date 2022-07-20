@@ -1,8 +1,9 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { joiningMissionAction, leavingMissionAction } from '../Redux/mission';
 
-const MissionCard = ({ description, name }) => {
-  const [reserved, setResereved] = useState(false);
+const MissionCard = ({ description, name, mission }) => {
+  const dispatch = useDispatch();
   return (
     <tr>
       <th style={{ minWidth: '170px' }}>
@@ -10,7 +11,7 @@ const MissionCard = ({ description, name }) => {
       </th>
       <td>{description}</td>
       <td>
-        {reserved
+        {mission.reserved
           ? (
             <p
               style={{ minWidth: '130px' }}
@@ -28,10 +29,10 @@ const MissionCard = ({ description, name }) => {
           )}
       </td>
       <td>
-        {!reserved
+        {!mission.reserved
           ? (
             <button
-              onClick={() => setResereved(true)}
+              onClick={() => dispatch(joiningMissionAction(mission.id))}
               type="button"
               style={{ minWidth: '120px' }}
               className="border border-success"
@@ -40,7 +41,7 @@ const MissionCard = ({ description, name }) => {
             </button>
           ) : (
             <button
-              onClick={() => setResereved(false)}
+              onClick={() => dispatch(leavingMissionAction(mission.id))}
               type="button"
               style={{ minWidth: '120px' }}
               className="border border-danger text-danger"
@@ -57,4 +58,5 @@ export default MissionCard;
 MissionCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  mission: PropTypes.string.isRequired,
 };
