@@ -23,11 +23,31 @@
   margin-bottom: 1rem;
 }
 
+.card-details > p {
+  line-height: 1.5rem;
+}
+
 .card-details > button {
   min-width: 150px;
+  padding: 0 1rem;
   height: 2rem;
   border-radius: 4px;
   color: var(--white);
   background-color: var(--blue);
   border: none;
+}
+
+.reserved {
+  background-color: var(--white) !important;
+  border: 1px solid var(--black) !important;
+  color: var(--black) !important; 
+}
+
+.reserveTag {
+  background-color: var(--blueVar1);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
 }

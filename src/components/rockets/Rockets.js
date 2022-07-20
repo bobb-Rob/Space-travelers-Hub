@@ -9,14 +9,17 @@ const Rockets = () => {
     <div className="rockets-list-container">
       {state.map((rocket) => {
         const {
-          description, rocketName, flickImage, id,
+          description, rocketName, flickImage, id, status,
         } = rocket;
+
         return (
           <RocketCard
             key={id}
             description={description}
             image={flickImage}
             name={rocketName}
+            id={id}
+            status={status}
           />
         );
       })}
