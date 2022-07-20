@@ -6,7 +6,7 @@ import rocketReducers from './Rockets/rockets';
 const store = configureStore({
   reducer: {
     rocketReducers,
-     missionReducer,
+    missionReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
