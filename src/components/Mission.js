@@ -1,67 +1,22 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getMissions, joiningMissionAction, leavingMissionAction } from '../Redux/mission';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import MissionCard from './missionCard';
 
 const Mission = () => {
-  const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions);
-
-  useEffect(() => {
-    if (missions.length === 0) {
-      dispatch(getMissions());
-    }
-  }, []);
-
+  const missions = useSelector((state) => state.missionReducer);
+  console.log(missions);
   return (
     <>
-      {
-        missions.map((mission) => (
-          <tr
-            key={mission.id}
-          >
-            <th>
-              <p>{mission.name}</p>
-            </th>
-            <td>{mission.description}</td>
-            <td>
-              {mission.reserved
-                ? (
-                  <p
-                    style={{ minWidth: '120px' }}
-                  >
-                    ACTIVE MEMBER
-                  </p>
-                ) : (
-                  <p
-                    style={{ minWidth: '120px' }}
-                  >
-                    NOT A MEMBER
-                  </p>
-                )}
-            </td>
-            <td>
-              {!mission.reserved
-                ? (
-                  <button
-                    onClick={() => dispatch(joiningMissionAction(mission.id))}
-                    type="button"
-                    style={{ minWidth: '100px' }}
-                  >
-                    Join Mission
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => dispatch(leavingMissionAction(mission.id))}
-                    type="button"
-                    style={{ minWidth: '100px' }}
-                  >
-                    Leave Mission
-                  </button>
-                )}
-            </td>
-          </tr>
-        ))
-      }
+      {missions.map((mission) => {
+        const { description, name, id } = mission;
+        return (
+          <MissionCard
+            key={id}
+            description={description}
+            name={name}
+          />
+        );
+      })}
     </>
   );
 };
