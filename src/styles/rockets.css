@@ -6,3 +6,28 @@
   line-height: normal;
   letter-spacing: normal;
 }
+
+.rocket-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rocket-card div:first-child > img {
+  width: 100%;
+}
+
+.card-details > h3,
+.card-details > p {
+  margin-bottom: 1rem;
+}
+
+.card-details > button {
+  min-width: 150px;
+  height: 2rem;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+}

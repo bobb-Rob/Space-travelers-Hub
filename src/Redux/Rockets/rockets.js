@@ -5,10 +5,10 @@ const getSelectField = (rockets) => {
   rockets.forEach((rocket) => {
     const selectedField = {};
     selectedField.id = rocket.id;
-    selectedField.name = rocket.rocket_name;
-    selectedField.type = rocket.rocket_type;
+    selectedField.rocketName = rocket.rocket_name;
+    selectedField.description = rocket.description;
     const [imageOne] = rocket.flickr_images;
-    selectedField.flickr_images = imageOne;
+    selectedField.flickImage = imageOne;
     newRockets = [...newRockets, selectedField];
   });
   return newRockets;
