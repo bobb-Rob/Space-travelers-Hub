@@ -3,18 +3,20 @@ import Mission from './Mission';
 
 function Missions() {
   return (
-    <table className="table table-bordered table-sm">
-      <thead>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <Mission />
-      </tbody>
-    </table>
+    <div className="missions-list-container">
+      <table className="table table-bordered table-sm">
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <Mission />
+        </tbody>
+      </table>
+    </div>
   );
 }
 

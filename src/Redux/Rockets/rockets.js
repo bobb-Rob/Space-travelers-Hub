@@ -9,6 +9,7 @@ const getSelectField = (rockets) => {
     selectedField.description = rocket.description;
     const [imageOne] = rocket.flickr_images;
     selectedField.flickImage = imageOne;
+    selectedField.status = false;
     newRockets = [...newRockets, selectedField];
   });
   return newRockets;

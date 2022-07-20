@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import RocketCard from './RocketCard';
-import '../styles/rockets.css';
+import '../../styles/rockets.css';
 
 const Rockets = () => {
   const state = useSelector((state) => state.rocketReducer);
