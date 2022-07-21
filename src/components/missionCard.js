@@ -58,5 +58,10 @@ export default MissionCard;
 MissionCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  mission: PropTypes.string.isRequired,
+  mission: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    reserved: PropTypes.bool,
+  }).isRequired,
 };

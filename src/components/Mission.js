@@ -6,6 +6,7 @@ import { getMission } from '../Redux/mission';
 const Mission = () => {
   const missions = useSelector((state) => state.missionReducer);
   const dispatch = useDispatch();
+
   useEffect(() => {
     if (missions.length === 0) {
       dispatch(getMission());
