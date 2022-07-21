@@ -38,6 +38,10 @@
   letter-spacing: 1px;
 }
 
+.logo-wrapper + div {
+  display: flex;
+}
+
 .image-logo {
   height: 45px;
   width: 45px;
@@ -47,7 +51,6 @@
 .nav-link {
   text-decoration: none;
   color: var(--blue);
-  margin: 0 1rem;
   font-family: Montserrat, sans-serif;
   font-size: 0.9rem;
   font-weight: normal;

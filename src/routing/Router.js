@@ -2,7 +2,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Rockets from '../components/Rockets';
+import Rockets from '../components/rockets/Rockets';
 import Missions from '../components/Missions';
 import MyProfile from '../components/MyProfile';
 
