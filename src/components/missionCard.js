@@ -14,15 +14,15 @@ const MissionCard = ({ mission }) => {
         {mission.reserved
           ? (
             <p
-              style={{ minWidth: '130px' }}
-              className="border bg-info text-light"
+              style={{ minWidth: '130px', marginTop: '40px' }}
+              className="border bg-info text-light text-center"
             >
               ACTIVE MEMBER
             </p>
           ) : (
             <p
-              style={{ minWidth: '130px' }}
-              className="border bg-secondary text-light"
+              style={{ minWidth: '130px', marginTop: '40px' }}
+              className="border bg-secondary text-light text-center"
             >
               NOT A MEMBER
             </p>
@@ -34,7 +34,7 @@ const MissionCard = ({ mission }) => {
             <button
               onClick={() => dispatch(joiningMissionAction(mission.id))}
               type="button"
-              style={{ minWidth: '120px' }}
+              style={{ minWidth: '120px', marginTop: '40%' }}
               className="border border-success"
             >
               Join Mission
@@ -43,7 +43,7 @@ const MissionCard = ({ mission }) => {
             <button
               onClick={() => dispatch(leavingMissionAction(mission.id))}
               type="button"
-              style={{ minWidth: '120px' }}
+              style={{ minWidth: '120px', marginTop: '40%' }}
               className="border border-danger text-danger"
             >
               Leave Mission
