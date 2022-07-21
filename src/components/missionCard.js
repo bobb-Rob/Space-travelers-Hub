@@ -55,13 +55,8 @@ const MissionCard = ({ mission }) => {
 };
 export default MissionCard;
 
-MissionCard.defaultProps = {
-  status: false,
-};
-
 MissionCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   mission: PropTypes.string.isRequired,
-
 };
