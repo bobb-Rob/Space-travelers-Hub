@@ -19,7 +19,7 @@ const NavBar = () => {
             <img src="../images/saturn.png" alt="" className="image-logo" />
             <h2>Space Traveler&#39;s Hub</h2>
           </div>
-          <div>
+          <div className="link-nav">
             <NavLinkEl
               path={"/"}
               name="Rockets"

@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { getRockets } from './Redux/Rockets/rockets';
 import store from './Redux/store';
-import { getMission2 } from './Redux/mission';
+import { getMission } from './Redux/mission';
 import App from './App';
 import './styles/index.css';
 
@@ -12,7 +12,7 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 store.dispatch(getRockets());
-store.dispatch(getMission2());
+store.dispatch(getMission());
 
 root.render(
   <BrowserRouter>
