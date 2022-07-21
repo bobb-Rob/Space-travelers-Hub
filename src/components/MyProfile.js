@@ -8,7 +8,7 @@ const MyProfile = () => {
   const missions = useSelector((state) => state.missionReducer);
   const getReservedRockets = ({ rocketReducer }) => rocketReducer.filter(({ status }) => status);
   const reserved = useSelector(getReservedRockets);
-  
+
   useEffect(() => {
     if (missions.length === 0) {
       dispatch(getMission());
@@ -18,9 +18,9 @@ const MyProfile = () => {
     <div className="my-profile-container">
       <section>
         <h2>My Missions</h2>
-        <ul style={{ border: '1px solid var(--borderLines)', padding: '0' }}>
-            {missions.filter((mission) => mission.reserved === true).map((fmission) => (
-            <li key={fmission.id} className="border p-3 w-50">
+        <ul style={{ padding: '0' }} className="list-unstyled">
+          {missions.filter((mission) => mission.reserved === true).map((fmission) => (
+            <li key={fmission.id} className="border p-3 w-70">
               {fmission.name}
             </li>
           ))}
