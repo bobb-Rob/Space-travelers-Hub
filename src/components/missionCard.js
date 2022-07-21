@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joiningMissionAction, leavingMissionAction } from '../Redux/mission';
 
-const MissionCard = ({ description, name, mission }) => {
+const MissionCard = ({ mission }) => {
   const dispatch = useDispatch();
   return (
     <tr>
       <th style={{ minWidth: '170px' }}>
-        <p>{name}</p>
+        <p>{mission.name}</p>
       </th>
-      <td>{description}</td>
+      <td>{mission.description}</td>
       <td>
         {mission.reserved
           ? (
