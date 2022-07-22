@@ -8,35 +8,33 @@ import RocketCard from '../../components/rockets/RocketCard';
 
 describe('should render with given state from Redux store', () => {
   test('Rockets.js renders correctly', () => {
-    let tree = renderer
-    .create(
-    <Provider store={store}>
-      <Rockets>
-        <RocketCard />
-      </Rockets>
-    </Provider>
-    ).toJSON();
+    const tree = renderer
+      .create(
+        <Provider store={store}>
+          <Rockets>
+            <RocketCard />
+          </Rockets>
+        </Provider>,
+      ).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
-})
+});
 
-
-describe('My connected react-redux commponents', ( )=> {  
-  
+describe('My connected react-redux commponents', () => {
   store.dispatch = jest.fn();
 
   test('It should dispatch an action', () => {
     render(
-      <Provider store={store}>       
-          <RocketCard />        
-      </Provider>
-    );  
+      <Provider store={store}>
+        <RocketCard />
+      </Provider>,
+    );
 
-    let element = screen.getByRole('button');     
+    const element = screen.getByRole('button');
     fireEvent.click(element);
 
     expect(store.dispatch).toHaveBeenCalledTimes(1);
     expect(store.dispatch).toHaveBeenCalledWith(reserved());
-  })
+  });
 });
