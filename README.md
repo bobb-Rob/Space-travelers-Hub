@@ -17,13 +17,12 @@
 - Users can join selected mission or leave the mission the user joined earlier. 😋
 - 
 
-## Getting Started 🙌
-
-To get a local copy up and running follow these simple example steps.
-
 ## Live link 🙌
 
-[Demo link](#)
+[Space Travel Hub - LINK](spacetravelhub.netlify.app)
+
+
+## Getting Started 🙌
 
 To get a local copy up and running follow these simple example steps.
 
