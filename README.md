@@ -69,7 +69,7 @@ Run
 
 | 👤 Name | Github | Twitter | LinkedIn |
 |------|--------|---------|----------|
-|Kinyera Amos|[@Kinyera](#)|[@Kinyera](#)|[@Kinyera](#)|
+|Kinyera Amos|[@Kinyera](https://github.com/bigmosi)|[@Kinyera](https://twitter.com/kinyera_amos)|[@Kinyera](https://www.linkedin.com/in/kinyera-amos-026062218/)|
 
 
 
