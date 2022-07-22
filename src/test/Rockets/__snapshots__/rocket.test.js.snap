@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with given state from Redux store Rockets.js renders correctly 1`] = `
+<div
+  className="rockets-list-container"
+/>
+`;
