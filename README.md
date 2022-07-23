@@ -19,7 +19,7 @@
 
 ## Live link 🙌
 
-[Space Travel Hub - LINK](spacetravelhub.netlify.app)
+[Space Travel Hub - LINK](https://spacetravelhub.netlify.app/)
 
 
 ## Getting Started 🙌
